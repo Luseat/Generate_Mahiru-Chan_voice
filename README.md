@@ -1,4 +1,4 @@
-# Mahiru~Chan Voice API 
+# Generate Mahiru~Chan Voice
 
 API Backend berbasis **FastAPI** untuk melakukan generasi suara menggunakan model **RVC (Retrieval-based Voice Conversion)**. API ini dirancang khusus untuk menghasilkan suara karakter **Mahiru Shiina** dari anime *The Angel Next Door Spoils Me Rotten*, dengan intonasi dan pelafalan bahasa Indonesia/Inggris yang natural.
 
@@ -61,3 +61,7 @@ Setelah server berjalan,  bisa mengakses dokumentasi interaktif Swagger UI di:
 
 ## 📝 Catatan
 Proyek ini masih dalam tahap pengembangan. Tahap saat ini baru mengimplementasikan Tahap 1 (Base TTS menggunakan Edge-TTS).
+
+
+---
+<p align="center">Copyright &copy; 2026 Hanifudin Robbani | All Rights Reserved.</p>
