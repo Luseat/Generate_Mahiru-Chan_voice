@@ -1,6 +1,6 @@
 # Mahiru~Chan Voice API 
 
-API Backend berbasis **FastAPI** untuk melakukan generasi suara menggunakan model **RVC (Retrieval-based Voice Conversion)**. API ini dirancang khusus untuk menghasilkan suara karakter **Mahiru Shiina** dari anime *The Angel Next Door Spoils Me Rotten*, dengan intonasi dan pelafalan bahasa Indonesia/Inggris yang sangat natural.
+API Backend berbasis **FastAPI** untuk melakukan generasi suara menggunakan model **RVC (Retrieval-based Voice Conversion)**. API ini dirancang khusus untuk menghasilkan suara karakter **Mahiru Shiina** dari anime *The Angel Next Door Spoils Me Rotten*, dengan intonasi dan pelafalan bahasa Indonesia/Inggris yang natural.
 
 ##  Fitur Utama
 - **Text-to-Voice (T2V)**: Menggunakan pendekatan *2-step pipeline* (Edge-TTS sebagai *base voice*, kemudian di-convert menggunakan RVC agar pelafalan bahasa Indonesia tidak kaku).
