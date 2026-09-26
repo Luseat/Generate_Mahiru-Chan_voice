@@ -48,7 +48,7 @@ mahiru_voice/
    uvicorn app.main:app --reload
    ```
 
-Server akan berjalan di `http://127.0.0.1:8000`.
+Server akan berjalan di `http://127.0.0.1:8000`,`http://127.0.0.1:8000/docs#/`.
 
 ## 📖 Endpoint Dokumentasi
 Setelah server berjalan,  bisa mengakses dokumentasi interaktif Swagger UI di:

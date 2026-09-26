@@ -1,7 +1,7 @@
 from fastapi import APIRouter, UploadFile, File, Form, HTTPException
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
-# from app.services.tts_service import generate_base_tts
+from app.services.tts_service import generate_base_tts
 # from app.services.rvc_service import process_rvc
 
 
@@ -17,14 +17,18 @@ class TexttoVoiceRequest(BaseModel):
 async def generate_text_to_voice(req: TexttoVoiceRequest):
     try:
         #1. Generate Base TTS (suara manusia biasa tapi pelafalan natural)
-        # base_audio_path = await generate_base_tts(req.text, req.voice)
+        base_audio_path = await generate_base_tts(req.text, req.voice)
         
         
         #2. Convert dengan RVC jadi suara Mahiru
         # mahiru_audio_path = await process_rvc(base_audio_path)
         
         
-        return {"status": "success", "message": f"Teks '{req.text}' memproses menjadi suara Mahiru Shiina..."}
+        return FileResponse(
+            path=base_audio_path,
+            media_type="audio/mpeg",
+            filename="base_voice.mp3"
+        )
     
     
     except Exception as e:
